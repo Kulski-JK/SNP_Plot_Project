@@ -1,0 +1,19 @@
+# === Normalize line endings ===
+* text=auto
+
+# === Handle R scripts ===
+*.R text eol=lf
+
+# === Treat documentation files as text ===
+*.md text
+*.txt text
+*.csv text
+*.tsv text
+*.Rmd text
+
+# === Prevent RStudio project files from affecting linguist stats ===
+*.Rproj linguist-vendored
+.Rproj.user/ linguist-vendored
+
+# === Optional: classify this repo as R (overrides default GitHub linguist detection) ===
+*.R linguist-language=R
